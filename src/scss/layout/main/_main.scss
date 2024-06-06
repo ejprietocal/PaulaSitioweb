@@ -1,0 +1,18 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer{
+    height: fit-content;
+    background-color: v.$azul;
+    font-family: 'Poppins', sans-serif;
+    .container--{
+        display: grid;
+        grid-template-columns: 1fr;
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .contenedor-firma{
+        background-color: v.$azul-claro;
+    }
+}

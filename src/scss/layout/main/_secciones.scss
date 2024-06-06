@@ -1,0 +1,232 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.barra-superior{
+    height: 3rem;
+    background-color: v.$azul-claro;
+}
+
+.seccion1{
+    background-color: v.$azul;
+    .titulo-slide{
+        margin-top: 8rem;
+    }
+}
+.seccion2{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 1rem;
+
+    @include m.tablet{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .item{
+        height: fit-content;
+    }
+    .titulo-marketing{
+        color: v.$azul;
+    }
+    #button-saber{
+        background-color: v.$azul-claro;
+        color: v.$blanco;
+        &:hover{
+            background-color: darken(v.$azul-claro, 30%);
+        }
+
+    }
+}
+.seccion3{
+    background-color: darken(v.$azul, 35%);
+    font-family: 'Poppins', sans-serif;
+
+
+    .contenedor-seccion3{
+
+        .servicios-contenedor{
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill,minmax(13rem,1fr));
+            @include m.tablet{
+                grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
+            }
+            gap: 2rem;
+            justify-content: center;
+            .servicio{
+                min-height: 10rem;
+                border: 5px solid v.$azul;
+                border-radius: .5rem;
+                cursor: pointer;
+                &:hover{
+                    
+                    border: 5px solid v.$blanco;
+                }
+            }
+        }
+    }
+
+}
+.seccion4{
+    font-family: 'Poppins', sans-serif;
+
+    .contenedor-para{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem;
+        @include m.tablet{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .icon{
+            width:5rem;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bi-house{
+
+            }
+        }
+    }
+    .button-agendar{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        background-color: v.$azul;
+        &:hover{
+            background-color: darken(v.$azul, 30%);
+        }
+    }
+}
+.seccion5{
+    font-family: 'Poppins', sans-serif;
+
+}
+.seccion6{
+    font-family: 'Poppins', sans-serif;
+    .container{
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+          }
+      
+          .swiper-slide {
+            height: 51rem;
+            font-size: 1.5rem;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            padding-top: 5rem;
+            border-radius: 1rem;
+
+            .title{
+                height: 7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .title,.price{
+                background-color: v.$azul;
+                color: v.$blanco;
+            }
+
+            ul{
+                margin-top: 3rem;
+                list-style-type: decimal;
+                width: 90%;
+                li{
+                    margin-bottom: 1rem;
+                }
+            }
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
+}
+.seccion7{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: lighten(v.$azul, 25%);
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .sobre-nosotros{
+        color: v.$azul;
+    }
+}
+
+.borde{
+    height: 7rem;
+    bottom: -2px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2000' height='70' preserveAspectRatio='none' viewBox='0 0 2000 70'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c52 C 80%2c46 240%2c23.8 400%2c22 C 560%2c20.2 640%2c47 800%2c43 C 960%2c39 1040%2c0.4 1200%2c2 C 1360%2c3.6 1440%2c46.2 1600%2c51 C 1760%2c55.8 1920%2c31 2000%2c26L2000 70L0 70z' fill='rgba(151%2c 162%2c 241%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c28 C 133.4%2c35.2 400.2%2c67.2 667%2c64 C 933.8%2c60.8 1067.4%2c11 1334%2c12 C 1600.6%2c13 1866.8%2c57.6 2000%2c69L2000 70L0 70z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='2000' height='70' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.carousel-inner{
+    .carousel-item{
+
+        width: 100%;
+        min-height: 50vh;
+    
+        .contenedor-background{
+            background-image: url('/build/img/paula-foto.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            max-width: v.$desktopHD;
+            margin: 0 auto;
+            @include m.tablet{
+                position: unset;
+                background-size: contain;
+                background-position-x: right;
+                min-height: inherit;
+            }
+        }
+
+        .texto-carousel{
+            backdrop-filter: blur(0px) saturate(180%);
+            -webkit-backdrop-filter: blur(0px) saturate(180%);
+            background-color: rgba(0, 0, 0, 0.35);
+            padding: 3rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            max-width: v.$desktopHD;
+            margin: 0 auto;
+            @include m.tablet{
+                position: unset;
+                width: auto;
+                padding: 5rem;
+                background-color: unset;
+                -webkit-backdrop-filter: unset;
+                backdrop-filter: unset;
+
+            }
+            .titulo-slide,.texto-slide{
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+            }
+            .texto-slide{
+                text-align: justify;
+            }
+        }
+
+    }
+}
