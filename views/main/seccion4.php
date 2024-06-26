@@ -2,19 +2,19 @@
     <div class="container seccion4">
         <h2 class="text-center display-3 fw-bold">¿Para quién es nuestro servicio?</h2>
         <div class="contenedor-para pt-5 pb-2">
-            <div class="para-quien h-100 border border-5 rounded rounded-3 p-3 position-relative">
-                <div class="icon position-absolute top-0 start-50 border border-primary border-5 translate-middle rounded-circle bg-primary-subtle p-3">
+            <div data-aos="fade-right" class="para-quien h-100 border border-5 rounded rounded-3 p-3 position-relative">
+                <div  class="icon position-absolute top-0 start-50 border border-primary border-5 translate-middle rounded-circle bg-primary-subtle p-3">
                     <i class="bi bi-house fs-1 text-primary-emphasis"></i>
                 </div>
                 <h3 class="text-center fs-1 pt-3 mt-5">Empresas</h3>
             </div>
-            <div class="para-quien h-100 border border-5 rounded rounded-3 p-3 position-relative">
+            <div data-aos="fade-down" class="para-quien h-100 border border-5 rounded rounded-3 p-3 position-relative">
                 <div class="icon position-absolute top-0 start-50 border border-danger border-5 translate-middle rounded-circle bg-primary-subtle p-3">
                     <i class="bi bi-person fs-1 text-danger-emphasis"></i>
                 </div>
                 <h3 class="text-center fs-1 pt-3 mt-5">Emprendedores</h3>
             </div>
-            <div class="para-quien h-100 border border-5 rounded rounded-3 p-3 position-relative">
+            <div data-aos="fade-left" class="para-quien h-100 border border-5 rounded rounded-3 p-3 position-relative">
                 <div class="icon position-absolute top-0 start-50 border border-success border-5 translate-middle rounded-circle bg-primary-subtle p-3">
                     <i class="bi bi-wifi fs-1 text-success-emphasis"></i>
                 </div>

@@ -1,0 +1,51 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.contenedor-sobre-nosotros{
+    min-height: 85vh;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5rem;
+
+    .contenedor-interno-sobre{
+        .contenedor-2-interno-sobre{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            p{
+                text-align: justify;
+            }
+            .contenedor{
+                display: grid;
+                grid-template-columns: 1fr;
+                @include m.tablet{
+                    grid-template-columns: repeat(2,1fr);
+                }
+                #imagen2{
+                    grid-row-start: 1;
+                }
+            }
+
+            .contenedor-1{
+                background: rgb(134,91,255);
+                background: radial-gradient(circle, rgba(134,91,255,1) 11%, rgba(151,162,241,1) 99%);
+                border-radius: 1rem;
+                padding: 2rem 2rem 0 2rem;
+                color: v.$blanco;
+            }
+            .contenedor-2{
+                background-color: v.$azul-claro;
+                border-radius: 1rem;
+                padding: 2rem 2rem 0 2rem;
+                color: v.$blanco;
+            }
+            .contenedor-3{
+                background-color: lighten(v.$azul, 10%);
+                border-radius: 1rem;
+                padding: 2rem 2rem 0 2rem;
+                color: v.$blanco;
+            }
+
+        }
+    }
+}

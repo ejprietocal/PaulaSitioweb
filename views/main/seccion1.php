@@ -1,11 +1,11 @@
 <!-- <div class="container-fluid barra-superior"></div> -->
 <div class="seccion1 container-fluid p-0 pt-md-3 position-relative">
         <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
+        <!-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+        </div> -->
         <div class="carousel-inner">
             <div class="container-fluid p-0 carousel-item active position-relative">
                 <div class="contenedor-background">
@@ -17,14 +17,14 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev z-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev z-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next z-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
         </div>
         <div class="borde container-fluid position-absolute">
         </div>

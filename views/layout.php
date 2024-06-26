@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="/build/css/app.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     
 </head>
 <body>
@@ -30,9 +37,15 @@
 
     <?php echo $scriptSwiper ?? '' ;?>
     <?php echo $scriptSwiperConfig ?? '' ;?>
+    <?php echo $scriptFormContact ?? '' ; ?>
 
     <script src="/build/js/app.min.js"></script>
     <script src="/build/js/navigation.min.js"></script>
     <script src="/build/js/boostrap/boostrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
 </body>
 </html>
